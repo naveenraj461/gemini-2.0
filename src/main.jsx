@@ -4,9 +4,10 @@ import './index.css'
 import App from './App.jsx'
 import ContextProvider from './context/context.jsx'
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ContextProvider> 
-    <App />
-  </ContextProvider>,
-)
+  <React.StrictMode>
+    <ContextProvider>
+      <App />
+    </ContextProvider>
+  </React.StrictMode>
+);
